@@ -1,0 +1,34 @@
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+<section id="login">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12">
+              <div class="form-wrap">
+                  <h1>Title</h1>
+                  <form role="form" autocomplete="off">
+                      <div class="form-group">
+                          {{firstName}}
+                          <label for="firstName" class="sr-only">First Name</label>
+                          <input type="text" [(ngModel)]="firstName" name="firstName" id="firstName" class="form-control" placeholder="FirstName" #first>
+                      </div>
+                      <div class="form-group">
+                          {{lastName}}
+                          <label for="lastName" class="sr-only">Last Name</label>
+                          <input type="text" [(ngModel)]="lastName" name="lastName" id="lastName" class="form-control" placeholder="LastName" #last>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+keep HTML: <input type="checkbox" [(ngModel)]="myVar">
+<div *ngIf="myVar">
+  <h1>Title</h1>
+</div>
+
+
